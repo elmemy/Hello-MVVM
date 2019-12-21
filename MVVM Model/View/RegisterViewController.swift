@@ -18,10 +18,17 @@ class RegisterViewController: UIViewController {
     //Call ViewModel
     private var registerViewModel : RegisterViewModel!
     
+    var selectedUserViewModel: UserViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.firsNameTextField.text = selectedUserViewModel.firstName
+        self.lastNameTextField.text = selectedUserViewModel.lastName
+        self.emailTextField.text = selectedUserViewModel.email
+        self.passwordTextField.text = selectedUserViewModel.password
+        
     }
     
 
@@ -29,6 +36,7 @@ class RegisterViewController: UIViewController {
     @IBAction func save()
     {
         self.registerViewModel = RegisterViewModel(firstName: firsNameTextField.text!, lastName: lastNameTextField.text!, password: passwordTextField.text!, email: emailTextField.text!)
+        
         
         self.registerViewModel.save()
     }

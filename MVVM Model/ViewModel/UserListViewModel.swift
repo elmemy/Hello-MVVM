@@ -31,10 +31,14 @@ class UserViewModel {
     
     var firstName :String!
     var lastName :String!
+    var email: String!
+    var password:String!
     
     init(user :User) {
         self.firstName = user.firstName
         self.lastName = user.lastName
+        self.email = user.email
+        self.password = user.password
     }
     
 }

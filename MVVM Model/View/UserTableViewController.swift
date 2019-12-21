@@ -38,4 +38,11 @@ extension UsersTableViewController
         cell.textLabel?.text = "\(userViewModel.firstName!), \(userViewModel.lastName!)" // this prints Optional("John") why Optional??
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = Storyboard.Main.instantiate(RegisterViewController.self)
+        let userViewModel = usersListViewModel.userViewModels[indexPath.row]
+        vc.selectedUserViewModel = userViewModel
+        present(vc,animated: true, completion: nil)
+    }
 }
