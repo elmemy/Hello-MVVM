@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		AD4DA0DC23AD5C71004337D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DA0DB23AD5C71004337D6 /* AppDelegate.swift */; };
 		AD4DA0DE23AD5C71004337D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DA0DD23AD5C71004337D6 /* SceneDelegate.swift */; };
-		AD4DA0E023AD5C71004337D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DA0DF23AD5C71004337D6 /* ViewController.swift */; };
 		AD4DA0E323AD5C71004337D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4DA0E123AD5C71004337D6 /* Main.storyboard */; };
 		AD4DA0E523AD5C74004337D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4DA0E423AD5C74004337D6 /* Assets.xcassets */; };
 		AD4DA0E823AD5C74004337D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4DA0E623AD5C74004337D6 /* LaunchScreen.storyboard */; };
+		AD4DA0F323AD5CE6004337D6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DA0F223AD5CE6004337D6 /* User.swift */; };
+		AD4DA0F523AD5D66004337D6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DA0F423AD5D66004337D6 /* RegisterViewController.swift */; };
+		AD4DA0F723AD5D91004337D6 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DA0F623AD5D91004337D6 /* RegisterViewModel.swift */; };
+		AD4DA0FA23AD6596004337D6 /* UserDataAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DA0F923AD6596004337D6 /* UserDataAccess.swift */; };
+		AD4DA0FC23AD92AB004337D6 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DA0FB23AD92AB004337D6 /* UserListViewModel.swift */; };
+		AD4DA0FE23AD9AF0004337D6 /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DA0FD23AD9AF0004337D6 /* UserTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AD4DA0D823AD5C71004337D6 /* MVVM Model.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM Model.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4DA0DB23AD5C71004337D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD4DA0DD23AD5C71004337D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AD4DA0DF23AD5C71004337D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AD4DA0E223AD5C71004337D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD4DA0E423AD5C74004337D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD4DA0E723AD5C74004337D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD4DA0E923AD5C74004337D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD4DA0F223AD5CE6004337D6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AD4DA0F423AD5D66004337D6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		AD4DA0F623AD5D91004337D6 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		AD4DA0F923AD6596004337D6 /* UserDataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataAccess.swift; sourceTree = "<group>"; };
+		AD4DA0FB23AD92AB004337D6 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		AD4DA0FD23AD9AF0004337D6 /* UserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,52 @@
 		AD4DA0DA23AD5C71004337D6 /* MVVM Model */ = {
 			isa = PBXGroup;
 			children = (
+				AD4DA0F823AD6573004337D6 /* Data Access */,
+				AD4DA0F123AD5CD9004337D6 /* Model */,
+				AD4DA0F023AD5CD3004337D6 /* View */,
+				AD4DA0EF23AD5CAD004337D6 /* ViewModel */,
 				AD4DA0DB23AD5C71004337D6 /* AppDelegate.swift */,
 				AD4DA0DD23AD5C71004337D6 /* SceneDelegate.swift */,
-				AD4DA0DF23AD5C71004337D6 /* ViewController.swift */,
 				AD4DA0E123AD5C71004337D6 /* Main.storyboard */,
 				AD4DA0E423AD5C74004337D6 /* Assets.xcassets */,
 				AD4DA0E623AD5C74004337D6 /* LaunchScreen.storyboard */,
 				AD4DA0E923AD5C74004337D6 /* Info.plist */,
 			);
 			path = "MVVM Model";
+			sourceTree = "<group>";
+		};
+		AD4DA0EF23AD5CAD004337D6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AD4DA0F623AD5D91004337D6 /* RegisterViewModel.swift */,
+				AD4DA0FD23AD9AF0004337D6 /* UserTableViewController.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AD4DA0F023AD5CD3004337D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD4DA0F423AD5D66004337D6 /* RegisterViewController.swift */,
+				AD4DA0FB23AD92AB004337D6 /* UserListViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD4DA0F123AD5CD9004337D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD4DA0F223AD5CE6004337D6 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD4DA0F823AD6573004337D6 /* Data Access */ = {
+			isa = PBXGroup;
+			children = (
+				AD4DA0F923AD6596004337D6 /* UserDataAccess.swift */,
+			);
+			path = "Data Access";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD4DA0E023AD5C71004337D6 /* ViewController.swift in Sources */,
+				AD4DA0F323AD5CE6004337D6 /* User.swift in Sources */,
+				AD4DA0F723AD5D91004337D6 /* RegisterViewModel.swift in Sources */,
+				AD4DA0FC23AD92AB004337D6 /* UserListViewModel.swift in Sources */,
+				AD4DA0FA23AD6596004337D6 /* UserDataAccess.swift in Sources */,
 				AD4DA0DC23AD5C71004337D6 /* AppDelegate.swift in Sources */,
 				AD4DA0DE23AD5C71004337D6 /* SceneDelegate.swift in Sources */,
+				AD4DA0FE23AD9AF0004337D6 /* UserTableViewController.swift in Sources */,
+				AD4DA0F523AD5D66004337D6 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +339,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZUMG9R88LL;
 				INFOPLIST_FILE = "MVVM Model/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +347,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ElMeMy.MVVM-Model";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +358,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZUMG9R88LL;
 				INFOPLIST_FILE = "MVVM Model/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +366,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ElMeMy.MVVM-Model";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
